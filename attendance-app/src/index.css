@@ -1,0 +1,104 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://png.pngtree.com/background/20221111/original/pngtree-half-square-abstract-blue-background-picture-image_1958880.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  filter: contrast(1);
+  color: #004074;
+}
+
+
+table{
+  background-color: rgb(255, 255, 255);
+}
+th{
+  background-color: rgb(207, 233, 255);
+  padding: 4px 8px;
+}
+
+tr{
+  padding: 4px 8px;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.ImgData {
+
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+h4{
+  color: white;
+}
+.A,
+.B {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  margin: 2%;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.form-control {
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  object-fit: cover;
+}
+
+.btn-success {
+  text-align: center;
+  width: 15%;
+  padding: 4px 8px 4px 8px;
+  color: white;
+  background-color:#2ea1ff;
+  font-weight: bold;
+  border: none;
+}
+.btn-success:hover{
+  color: white;
+  background-color:#008cff;
+}
+
+
+.form-group {
+  background-color: rgb(255 255 255);
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+
+i {
+  color: white;
+  font-weight: bold;
+  padding-right: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ImgData {
+      flex-direction: column;
+  }
+
+  .A,
+  .B {
+      width: 100%;
+  }
+
+  .btn-success {
+      width: 30%;
+  }
+}
